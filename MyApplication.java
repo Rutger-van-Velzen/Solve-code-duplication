@@ -10,12 +10,12 @@ public class MyApplication {
     private void theThing(ThisClass thisClass){
         System.out.println("Some code Before");
         thisClass.printName();
-        System.out.println("Some code afther");
+        System.out.println("Some code after");
     }
 
     private void theThing(ThatClass thatClass){
         System.out.println("Some code Before");
         thatClass.printName();
-        System.out.println("Some code afther");
+        System.out.println("Some code after");
     }
 }
