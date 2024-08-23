@@ -8,13 +8,13 @@ public class MyApplication {
     }
 
     private void theThing(ThisClass thisClass){
-        System.out.println("Some code Before");
+        System.out.println("Some code before");
         thisClass.printName();
         System.out.println("Some code after");
     }
 
     private void theThing(ThatClass thatClass){
-        System.out.println("Some code Before");
+        System.out.println("Some code before");
         thatClass.printName();
         System.out.println("Some code after");
     }
