@@ -1,21 +1,24 @@
 public class MyApplication {
     public void start(){
-        ThisClass thisClass = new ThisClass();
-        theThing(thisClass);
+        PingConnection pingConnection = new PingConnection();
+        theThing(pingConnection);
 
-        ThatClass thatClass = new ThatClass();
-        theThing(thatClass);
+        MessageSender messageSender = new MessageSender();
+        theThing(messageSender);
     }
 
-    private void theThing(ThisClass thisClass){
+    // Without touching PingConnection and MessageSender.
+    // How would you remove code duplication?
+    // And don't forget, the Method names are no longer the same!
+    private void theThing(PingConnection thisClass){
         System.out.println("Some code before");
-        thisClass.printName();
+        thisClass.pingOtherSystem();
         System.out.println("Some code after");
     }
 
-    private void theThing(ThatClass thatClass){
+    private void theThing(MessageSender thatClass){
         System.out.println("Some code before");
-        thatClass.printName();
+        thatClass.sendMessageToOtherSystem();
         System.out.println("Some code after");
     }
 }
